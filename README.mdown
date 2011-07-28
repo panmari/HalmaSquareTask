@@ -2,13 +2,13 @@
 Das HalmaSkeleton besitzt zwar schon grosse Teile der Spiellogik, aber hat vor allem bei der Initialisierung des Spiels ging dem vorherigen Programmierer die Puste aus.
 Sie fehlt fast vollständig, bis auf die Methodenköpfe!
 Kannst du die fehlenden Teile ergänzen, so dass ein funktionierendes Spiel daraus entsteht?
-
+  ![This should be a picture of the initialized game](Screenshot.png)
 
 ## 1. initializePlayers @ Halma.java
 Füge zu den bereits vorhandenen ArrayLists mit der .add() Methode alle Locations hinzu, die auf dem Screenshot beim jeweiligen Spieler angezeigt werden. Versuche zu verstehen, wieso hier keine endLocations deklariert werden müssen, indem du den Konstruktor von HalmaPlayer.java und die beiden Zeilen am Ende der Methode untersuchst.
 
 ## 2. initializeStones @ HalmaPlayer.java
-Nachdem die Locations zu HalmaPlayer übergeben wurden, muss der HalmaPlayer selbst noch die Steine auf die Locations legen. Das ausgeführte Spiel sollte dann etwa so aussehen, wie auf dem Screenshot. ![This should be a picture of the initialized game](./InitializedGame.png)
+Nachdem die Locations zu HalmaPlayer übergeben wurden, muss der HalmaPlayer selbst noch die Steine auf die Locations legen. Das ausgeführte Spiel sollte dann etwa so aussehen, wie auf dem Screenshot.
 
 ## 3. getInterjacentLocations @ Halma.java
 Jetzt wird's ein bisschen schwieriger.
