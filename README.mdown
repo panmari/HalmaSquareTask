@@ -1,0 +1,20 @@
+# SquareHalma Tasksheet
+Das HalmaSkeleton besitzt zwar schon grosse Teile der Spiellogik, aber hat vor allem bei der Initialisierung des Spiels ging dem vorherigen Programmierer die Puste aus.
+Sie fehlt fast vollständig, bis auf die Methodenköpfe!
+Kannst du die fehlenden Teile ergänzen, so dass ein funktionierendes Spiel daraus entsteht?
+
+
+1. initializePlayers @ Halma.java
+Füge zu den bereits vorhandenen ArrayLists mit der .add() Methode alle Locations hinzu, die auf dem Screenshot beim jeweiligen Spieler angezeigt werden. Versuche zu verstehen, wieso hier keine endLocations deklariert werden müssen, indem du den Konstruktor von HalmaPlayer.java und die beiden Zeilen am Ende der Methode untersuchst.
+
+2. initializeStones @ HalmaPlayer.java
+Nachdem die Locations zu HalmaPlayer übergeben wurden, muss der HalmaPlayer selbst noch die Steine auf die Locations legen. Das ausgeführte Spiel sollte dann etwa so aussehen, wie auf dem Screenshot.
+
+3. getInterjacentLocations @ Halma.java
+Jetzt wird's ein bisschen schwieriger.
+Um zu überprüfen, ob ein Sprung legal war, muss man alle Locations zwischen dem Sprungstart und dem Sprungziel herausfinden. Diese Methode erledigt genau diese Aufgabe. Schreibe einen Algorithmus, der alle dazwischenliegenden Locations in die ArrayList interjacentLocations hinzufügt (exklusive der beiden übergebenen Locations).
+
+4. isWinner @ HalmaPlayer.java
+Nun ist das Spiel eigentlich schon fast vollständig, es fehlt nur das Sahnehäubchen: 
+Die Überprüfung, ob ein Spieler gewonnen hat. Ergänze isWinner so, dass es 
+true zurückgibt, falls der Spieler gewonnen hat.
