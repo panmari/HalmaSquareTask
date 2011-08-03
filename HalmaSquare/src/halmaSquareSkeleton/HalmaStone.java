@@ -2,9 +2,13 @@ package halmaSquareSkeleton;
 
 import ch.aplu.jgamegrid.Actor;
 
-/*
- * TASK: this stuff is kinda tricky, not easy to programm...
- * I wouldn't recommend doing stuff here...
+/**
+ * Every stone on the board is an object of this class. A stone
+ * can be in two states: either pickedUp or not pickedUp. This is
+ * represented with a boolean.
+ * 
+ * Instead of assertions, that could be verified by rising an exception.
+ * But this is not part of this task.
  */
 class HalmaStone extends Actor {
 	public HalmaPlayer player;
@@ -32,7 +36,7 @@ class HalmaStone extends Actor {
 
 	/**
 	 * Funny color changes could occur here, if a 
-	 * already picked Up stone gets picked up again! 
+	 * already picked up stone gets picked up again! 
 	 * Make sure this is ONLY called on NOT pickedUp stones!
 	 */
 	public void pickUp() {
